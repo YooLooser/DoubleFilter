@@ -1,0 +1,100 @@
+
+@media screen and (min-width: 500px){
+
+	/*
+	 * MAIN HEADER
+	 */
+
+	.title{
+		width: 80%;
+		padding: 5% 10%;
+		background-color: #1f1f1f;
+	}
+
+	#titulo{
+		font-family: "Segoe UI";
+		font-size: 3rem;
+		color: #fff;
+		text-align: left;
+	}
+
+	/*
+	 * FORMULARIO
+	 */
+
+	.formulario{
+		width: 60%;
+		padding: 5% 20%;
+		text-align: center;
+		font-family: "Verdana";
+	}
+
+	.subtitle{
+		font-size: 1.8rem;
+		text-align: left;
+		margin-bottom: 2%;
+	}
+
+	.form-line{
+	    min-inline-size: min-content;
+	    border-width: 3px;
+	    border-style: groove;
+	    border-color: #d5ad46;
+	    border-image: initial;
+	    margin-bottom: 5%;
+	}
+
+	.formulario label{
+		font-size: 0.9rem;
+	}
+
+	.form-input{
+		width: 81%;
+		height: 1.7rem;
+		margin-bottom: 2%;
+		padding-left: 1rem;
+		border-radius: 5px;
+		font-size: 0.9rem;
+	}
+
+	.form-input-gr{
+		width: 59%;
+		margin: 0 0.5% 2% 0.5%;
+	}
+
+	.form-input-md{
+		width: 39%;
+		margin: 0 0.5% 2% 0.5%;
+	}
+
+	.form-input-pq{
+		width: 19%;
+		margin: 0 0.5% 2% 0.5%;
+	}
+
+	.form-input{
+		box-shadow: 1px 1px 2px #fff;
+		-moz-box-shadow: 1px 1px 2px #fff;
+		-webkit-box-shadow: 1px 1px 2px #fff;
+		border: 2px solid #808080;
+	}
+
+	.form-input:hover {
+		border:2px solid #F2E7A7;
+	}
+
+	.form-button{
+		width: 40%;
+		height: 2.1rem;
+		background: transparent;
+		border: 3px solid #808080;
+		border-radius: 10px;
+		font-size: 1.2rem;
+	}
+
+	.form-button:hover {
+		background: #d5ad46;
+		border-color: #d5ad46;
+		color: #fff;
+	}
+}
