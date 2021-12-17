@@ -1,0 +1,88 @@
+
+@media screen and (min-width: 500px){
+	
+	/*
+	 * MAIN HEADER
+	 */
+
+	.title{
+		width: 80%;
+		padding: 5% 10%;
+		background-color: #1f1f1f;
+	}
+
+	#titulo{
+		font-family: "Segoe UI";
+		font-size: 3rem;
+		color: #fff;
+		text-align: left;
+	}
+
+	/*
+	 * FORMULARIO
+	 */
+
+	.formulario{
+		width: 60%;
+		padding: 5% 20%;
+		text-align: center;
+	}
+
+	.contact-input{
+		width: 100%;
+		height: 1.7rem;
+		margin-bottom: 2%;
+		padding-left: 1rem;
+		border-radius: 25px;
+		font-size: 1.1rem;
+	}
+
+	.contact-input, #caixa_de_texto{
+		box-shadow: 1px 1px 2px #fff;
+		-moz-box-shadow: 1px 1px 2px #fff;
+		-webkit-box-shadow: 1px 1px 2px #fff;
+		border: 2px solid #808080;
+		font-family: "Verdana";
+	}
+
+	#caixa_de_texto{
+		width: 99%;
+		height: 200px;
+		margin-bottom: 2%;
+		padding: 2%;
+		border-radius: 25px;
+		font-size: 1.1rem;
+	}
+
+	.contact-input:hover, #caixa_de_texto:hover {
+		border:2px solid #F2E7A7;
+	}
+
+	.contact-input:select, #caixa_de_texto:select {
+		border:2px solid #F2E7A7;
+	}
+
+	.contact-input:onclick {
+		border-color: #F2E7A7;
+	}
+
+	.contact-box-button{
+
+	}
+
+	.contact-button{
+		width: 40%;
+		height: 2.1rem;
+		background: transparent;
+		border: 3px solid #808080;
+		border-radius: 10px;
+		font-family: "Verdana";
+		font-size: 1.4rem;
+	}
+
+	.contact-button:hover {
+		background: #d5ad46;
+		border-color: #d5ad46;
+		color: #fff;
+	}
+}

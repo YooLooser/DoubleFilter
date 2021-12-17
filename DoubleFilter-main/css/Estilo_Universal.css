@@ -1,0 +1,710 @@
+@media screen and (min-width: 900px){
+	/*
+	 *	CONFIGURAÇÕES-BODY
+	 */
+
+	 *{margin: 0; padding: 0;}
+
+	html, body{
+		width: 100%;
+		height: 100%;
+		max-width: 1280px;
+	}
+
+	body{
+		background-image: url("fundo-madeira.jpg");
+		background-color: #D97823;
+		background-attachment: fixed;
+	}
+
+	.body-box {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	/*
+	 *	CABEÇALHO NAV-BAR
+	 */
+
+	#home {
+		width: 70%;
+		margin: 0;
+		padding: 15px 15%;
+		box-shadow: 0 0 10px #808080;
+		position: fixed;
+	}
+
+	#home {
+		border-top: 5px solid #F2D49B;
+		background-color: #fff;
+	}
+
+	#navBar-principal {
+		height: 15%;
+		display: block;
+	}
+
+	.navBar-box-Link{
+		display: inline-block;
+		vertical-align: bottom;
+		padding-left: 2%;
+		width: 65%;
+	}
+
+
+	.navBar-box-Logo{
+		display: inline;
+		width: 30%;
+		margin-right: 2rem;
+	}
+
+	.navBar-Link {
+		cursor: pointer;
+	    color: #1f1f1f;
+		text-decoration: none;
+		font-family: 'Verdana';
+		font-size: 0.8em;
+		bottom: 0;
+	}
+
+	.navBar-Link{
+		display: inline-block;
+		width: 40%;
+		height: 20px;
+		border-bottom: 2px solid #F2D49B;
+		vertical-align: bottom;
+	}
+
+	#navBar-box-Link-1 a:hover{
+		background: #F2D49B;
+		color: #fff;
+	}
+
+	.navBar-Logo {
+		text-decoration: none;
+		border: none;
+		vertical-align: bottom;
+	}
+
+	#busca_principal {
+		display: inline;
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+	}
+
+
+	#nav_logo {
+		width: 20%;
+	}
+
+	.icone {
+		width: 20px;
+	}
+
+	.container-busca {
+	  	width:100%;
+	  	position: relative;
+	  	height: 50px;
+	}
+
+	#navBar-box-Link-2 input {
+	  	height: 1.5rem;
+	  	border: none;
+	  	outline: none;
+	  	padding-right: 50px;
+	  	width: 0;
+	  	position: absolute;
+	  	bottom: 0;
+	  	right: 0;
+	  	background: none;
+	  	z-index: 3;
+	  	transition: width 1s ease-out;
+	  	cursor: pointer;
+	  	vertical-align: bottom;
+	}
+
+	#navBar-box-Link-2 input:focus { 
+		border: none;
+	  	border-bottom: 2px solid #F2D49B;
+	  	width: 100%;
+	  	z-index: 1;
+	  	transition: width 1s ease-in;
+	}
+
+	#navBar-box-Link-2 button { 
+	  	padding: 2%;
+	  	width: 16%;
+	  	border: none;
+	  	position: absolute;
+	  	bottom: 0;
+	  	right: 0;
+	  	z-index: 2;
+	  	cursor: pointer;
+	}
+
+	#navBar-box-Link-2 button:focus {
+	  	outline: none;
+	}
+
+	#navBar-box-Link-2 label {
+	  	position: absolute;
+	  	width: 1px;
+	  	height: 1px;
+	  	padding: 0;
+	  	margin: -1px;
+	  	overflow: hidden;
+	  	clip: rect(0,0,0,0);
+	  	border: 0;	
+	}
+
+	.container-busca{
+		vertical-align: bottom;
+		height: 100%;
+	}
+
+	#navBar-box-Link-1,#navBar-box-Link-2,#navBar-box-Link-3{
+		display: inline-block;
+		text-align: center;
+	}
+
+	#navBar-box-Link-1{
+		width: 50%;
+	}
+
+	#navBar-box-Link-2{
+		width: 30%;
+		padding: 0;
+	}
+
+	#navBar-box-Link-3{
+		width: 10%;
+	}
+
+	#nav_icon_1,#nav_icon_2{
+		width: 50%;
+	}
+
+	.perfil-menu{
+		list-style: none;
+	}
+
+	.perfil-menu li{
+		position: relative;
+		float: left;
+	}
+
+	.perfil-menu li a{
+		cursor: pointer;
+	    color: #1f1f1f;
+		text-decoration: none;
+		font-family: 'Verdana';
+		font-size: 0.8em;
+		width: 6rem;
+		height: 1.5rem;
+		vertical-align: bottom; 
+		display:block;
+	}
+
+	.perfil-menu li a:hover{
+		background: #F2D49B;
+		color: #fff;
+	}
+
+	.perfil-menu li  ul{
+		list-style: none;
+		position: absolute;
+		top: 25px;
+		left: 0;
+		background-color: #fff;
+		display: none;
+	}
+
+	.perfil-menu li:hover ul, .perfil-menu li.over ul{display:block;}
+
+	.perfil-menu li ul li{
+		border-bottom:2px solid #F2D49B;
+		display:block;
+		width:6rem;
+	}
+
+	/*
+	 *	CONTEÚDO MAIN
+	 */
+
+	.main-box {
+		width: 80%;
+		max-width: 1280px;
+		margin: 0;
+		padding: 5% 10% 0 10%;
+	}
+
+	#main-background{
+		background-color: #fff;
+	}
+
+	/*
+	 *	RODAPÉ BOTTOM
+	 */
+
+	 .rodape{
+		width: 80%;
+		margin: 0;
+		padding: 10px 10% 10px 10%;
+		background-color: #000;
+	 }
+
+	 #rodape-link-logo{
+	 	text-decoration: none;
+	 	padding: 0;
+	 }
+
+	#rodape-logo{
+		filter: invert(1);
+		width: 80%;
+	}
+
+	#p-rights{
+		color: grey;
+		text-align: center;
+		font-family: Verdana;
+		font-size: 0.7rem;
+		margin: 0.8rem 0 0 0;
+	}
+
+	.rodape-box{
+		width: 100%;
+		padding: 0;
+	}
+
+	#rodape-container1,#rodape-container2{
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	#rodape-container1{
+		width: 30%;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	#rodape-container2{
+		width: 60%;
+		vertical-align: middle;
+		padding: 0 0 2% 0;
+	}
+
+	.rodape-title{
+		margin: 0 0 5px 0;
+		color: #696969;
+		font-family: Verdana;
+		font-size: 0.9rem;
+	}
+
+	.icon_redes{
+		width: 2rem;
+		margin-right: 5px;
+	}
+
+	.rodape-text-box{
+		margin: 0;
+		padding: 5% 0 0 0;
+		display: inline-block;
+		width: 48%;
+	}
+
+	#rodape-text-box1{
+	}
+
+	#rodape-text-box2{
+		vertical-align: top;
+	}
+
+	#rodape-text-box2-container{
+		width: 60%;
+		left: 0;
+		text-align: left;
+	}
+
+	#logo-box{
+		height: 60%;
+		width: 100%;
+		padding: 20% 0;
+		text-align: center;
+	}
+
+	.contact-link{
+		vertical-align: middle;
+		text-decoration: none;
+		color: #f2f2f2;
+		font-family: Verdana;
+		font-size: 0.7rem;
+	}
+
+	.contact-box{
+		vertical-align: middle;
+		padding-top: 2%;
+	}
+
+	.contact-icon{
+		vertical-align: middle;
+	}
+}
+
+@media screen and (max-width: 899px) and (min-width: 500px){
+	/*
+	 *	CONFIGURAÇÕES-BODY
+	 */
+
+	 *{margin: 0; padding: 0;}
+
+	html, body{
+		width: 100%;
+		height: 100%;
+	}
+
+	.body-box {
+		width: 100%;
+		max-width: 899px;
+		min-width: 500px;
+		margin: 0;
+		padding: 0;
+	}
+
+	/*
+	 *	CABEÇALHO NAV-BAR
+	 */
+
+	#home {
+		width: 90%;
+		margin: 0;
+		padding: 15px 5%;
+		box-shadow: 0 0 10px #808080;
+		position: relative;
+	}
+
+	#home {
+		border-top: 5px solid #F2D49B;
+		background-color: #fff;
+	}
+
+	#navBar-principal {
+		height: 20%;
+		display: block;
+	}
+
+	.navBar-box-Link{
+		display: block;
+		bottom: 0;
+		width: 90%;
+		padding: 0 5%;
+	}
+
+
+	.navBar-box-Logo{
+		display: block;
+		width: 80%;
+		padding: 0 10%;
+		text-align: center;
+	}
+
+	.navBar-Link {
+		cursor: pointer;
+	    color: #1f1f1f;
+		text-decoration: none;
+		font-family: 'Verdana';
+		font-size: 0.8em;
+		bottom: 0;
+	}
+
+	.navBar-Link{
+		display: inline-block;
+		width: 40%;
+		height: 20px;
+		border-bottom: 2px solid #F2D49B;
+		vertical-align: bottom;
+	}
+
+	#navBar-box-Link-1 a:hover{
+		background: #F2D49B;
+		color: #fff;
+	}
+
+	.navBar-Logo {
+		text-decoration: none;
+		border: none;
+		vertical-align: bottom;
+	}
+
+	#busca_principal {
+		display: inline;
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+	}
+
+
+	#nav_logo {
+		width: 60%;
+	}
+
+	.icone {
+		width: 20px;
+	}
+
+	.container-busca {
+	  	width:100%;
+	  	position: relative;
+	  	height: 50px;
+	}
+
+	#navBar-box-Link-2 input {
+	  	height: 1.5rem;
+	  	border: none;
+	  	outline: none;
+	  	padding-right: 50px;
+	  	width: 0;
+	  	position: absolute;
+	  	bottom: 0;
+	  	right: 0;
+	  	background: none;
+	  	z-index: 3;
+	  	transition: width 1s ease-out;
+	  	cursor: pointer;
+	  	vertical-align: bottom;
+	}
+
+	#navBar-box-Link-2 input:focus { 
+		border: none;
+	  	border-bottom: 2px solid #F2D49B;
+	  	width: 100%;
+	  	z-index: 1;
+	  	transition: width 1s ease-in;
+	}
+
+	#navBar-box-Link-2 button { 
+	  	padding: 2%;
+	  	width: 16%;
+	  	border: none;
+	  	position: absolute;
+	  	bottom: 0;
+	  	right: 0;
+	  	z-index: 2;
+	  	cursor: pointer;
+	}
+
+	#navBar-box-Link-2 button:focus {
+	  	outline: none;
+	}
+
+	#navBar-box-Link-2 label {
+	  	position: absolute;
+	  	width: 1px;
+	  	height: 1px;
+	  	padding: 0;
+	  	margin: -1px;
+	  	overflow: hidden;
+	  	clip: rect(0,0,0,0);
+	  	border: 0;	
+	}
+
+	.container-busca{
+		vertical-align: bottom;
+		height: 100%;
+	}
+
+	#navBar-box-Link-1,#navBar-box-Link-2,#navBar-box-Link-3{
+		display: inline-block;
+		text-align: center;
+	}
+
+	#navBar-box-Link-1{
+		width: 50%;
+	}
+
+	#navBar-box-Link-2{
+		width: 30%;
+		padding: 0;
+	}
+
+	#navBar-box-Link-3{
+		width: 10%;
+	}
+
+	#nav_icon_1,#nav_icon_2{
+		width: 50%;
+	}
+
+	.perfil-menu{
+		list-style: none;
+	}
+
+	.perfil-menu li{
+		position: relative;
+		float: left;
+	}
+
+	.perfil-menu li a{
+		cursor: pointer;
+	    color: #1f1f1f;
+		text-decoration: none;
+		font-family: 'Verdana';
+		font-size: 0.8em;
+		width: 6rem;
+		height: 1.5rem;
+		vertical-align: bottom; 
+		display:block;
+	}
+
+	.perfil-menu li a:hover{
+		background: #F2D49B;
+		color: #fff;
+	}
+
+	.perfil-menu li  ul{
+		list-style: none;
+		position: absolute;
+		top: 25px;
+		left: 0;
+		background-color: #fff;
+		display: none;
+	}
+
+	.perfil-menu li:hover ul, .perfil-menu li.over ul{display:block;}
+
+	.perfil-menu li ul li{
+		border-bottom:2px solid #F2D49B;
+		display:block;
+		width:6rem;
+	}
+
+	/*
+	 *	CONTEÚDO MAIN
+	 */
+
+	.main-box {
+		width: 100%;
+		max-width: 899px;
+		margin: 0;
+	}
+
+	#main-background{
+		background-color: #fff;
+	}
+
+	/*
+	 *	RODAPÉ BOTTOM
+	 */
+
+	 .rodape{
+		width: 90%;
+		margin: 0;
+		padding: 10px 5% 10px 5%;
+		background-color: #000;
+	 }
+
+	 #rodape-link-logo{
+	 	text-decoration: none;
+	 	padding: 0;
+	 }
+
+	#rodape-logo{
+		filter: invert(1);
+		width: 80%;
+	}
+
+	#p-rights{
+		color: grey;
+		text-align: center;
+		font-family: Verdana;
+		font-size: 0.7rem;
+		margin: 0.8rem 0 0 0;
+	}
+
+	.rodape-box{
+		width: 100%;
+		padding: 0;
+	}
+
+	#rodape-container1,#rodape-container2{
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	#rodape-container1{
+		width: 50%;
+		padding: 0 25%;
+	}
+
+	#rodape-container2{
+		width: 90%;
+		padding: 0 5% 2% 5%;
+	}
+
+	.rodape-title{
+		margin: 0 0 5px 0;
+		color: #696969;
+		font-family: Verdana;
+		font-size: 0.9rem;
+	}
+
+	.icon_redes{
+		width: 2rem;
+		margin-right: 5px;
+	}
+
+	.rodape-text-box{
+		margin: 0;
+		padding: 2% 0 0 0;
+		display: inline-block;
+		width: 48%;
+		text-align: center;
+	}
+
+	#rodape-text-box1{
+	}
+
+	#rodape-text-box2{
+		vertical-align: top;
+	}
+
+	#rodape-text-box2-container{
+		width: 80%;
+		padding: 0 10% 0 10%;
+	}
+
+	#logo-box{
+		height: 60%;
+		width: 100%;
+		padding: 20% 0;
+		text-align: center;
+	}
+
+	.contact-link{
+		vertical-align: middle;
+		text-decoration: none;
+		color: #f2f2f2;
+		font-family: Verdana;
+		font-size: 0.7rem;
+	}
+
+	.contact-box{
+		padding: 2% 8% 0 8%;
+		text-align: left;
+	}
+
+	.contact-icon{
+		vertical-align: middle;
+	}
+}

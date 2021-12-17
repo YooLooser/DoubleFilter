@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Minha Conta - Double Filter</title>
+		<link rel="shortcut icon" href="imagens/icones/logo_icone1.ico">
+		<link rel="stylesheet" type="text/css" href="css/Estilo_Universal.css">
+		<link rel="stylesheet" type="text/css" href="css/Estilo_Minha_Conta.css">
+	</head>
+	<body onload="verificarLogado()">
+
+		<div class="body-box">
+			<header id="home">
+				<nav id="navBar-principal">
+					<div class="navBar-box-Logo">
+						<a href="index.html" class="navBar-Logo">
+							<img src="imagens/logos/logo_DF4_preto.png" id="nav_logo">
+						</a>
+					</div>
+					<div class="navBar-box-Link">
+						<div id="navBar-box-Link-1">
+							<a href="Produtos.html" class="navBar-Link">Produtos</a> 
+							<a href="Contato.html" class="navBar-Link">Contate-nos</a> 
+						</div>
+						<div id="navBar-box-Link-2">		
+							<form method="post" action="" id="busca_principal">
+								<div class="container-busca">
+									<label for="input-busca">Buscar</label>
+									<input type="search" name="busca" placeholder="Buscar" id="input-busca" class="form_busca">
+									<button type="submit" style="background:url(imagens/icones/pesquisa.png) center no-repeat;"><img src="imagens/icones/pesquisa.png" width="18rem"></button>
+								</div>
+							</form> 
+						</div>
+						<div id="navBar-box-Link-3">
+							<ul class="perfil-menu">
+								<li><img src="imagens/icones/perfil.png" class="icone">
+								<ul>
+									<li><a href="Minha_Conta.html">Entrar</a></li>
+									<li><a href="Cadastro.html">Cadastre-se</a></li>
+								</ul>
+								</li>
+								<li>
+									<a href="Meu_Carrinho.html" class="navBar-icone" id="nav_icon_2"><img src="imagens/icones/carrinho.png" class="icone"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<main class="main-box">
+			<div id="main-background">
+
+				<header class="title">
+					<h1 id="titulo">Entrar</h1>
+				</header>
+
+				<form method="post" action="" class="formulario">
+					<fieldset class="form-line">
+						<legend class="subtitle">Informe os Dados</legend>
+
+						<label for="usuario">
+							<input class="form-input" type="text" name="usuario" id="usuario" placeholder="Nome de Usuário ou E-mail" maxlength="40" required>
+						</label>
+
+						<label for="senha">
+							<input class="form-input" type="password" name="senha" id="senha" placeholder="Senha" maxlength="20" minlength="8" required>
+						</label>
+
+						<button class="form-button" type="button" onclick="logarConta()">Entrar</button>
+
+						<div id="box-cadastro">
+							<p id="p-form">Ainda não possui uma conta?</p>
+							<a class="formLink" href="Cadastro.html">Cadastre-se aqui</a>
+						</div>
+					
+					</fieldset>
+				</form>
+
+			</div>
+			</main>
+
+			<footer class="rodape">
+				<div class="rodape-box">
+					<div id="rodape-container1">
+						<div id="logo-box">
+							<a href="index.html#home" id="rodape-link-logo"><img src="imagens/logos/logo_DF4_preto.png" id="rodape-logo"></a>
+						</div>
+					</div>
+					<div id="rodape-container2">
+						<adress id="rodape-text">
+							<div class="rodape-text-box" id="rodape-text-box1">
+								<h4 class="rodape-title">Informações de Contato</h4>
+								<div class="contact-box">
+									<img src="imagens/icones/telefone.png" width="25px" class="contact-icon">
+									<a href="tel:(34) 9999-9999" target="blank" class="contact-link"> (34) 9999-9999</a>
+								</div>
+								<div class="contact-box">
+									<img src="imagens/icones/whatsapp.png" width="25px" class="contact-icon">
+									<a href="https://wa.me/55042999999999" target="blank" class="contact-link">42 99999-9999</a>
+								</div>
+								<div class="contact-box">
+									<img src="imagens/icones/email.png" width="25px" class="contact-icon">
+									<a href="mailto:doublefilter@gmail.com" class="contact-link">doublefilter@gmail.com</a>
+								</div>
+							</div>
+							<div class="rodape-text-box" id="rodape-text-box2">
+								<div id="rodape-text-box2-container">
+								<h4 class="rodape-title">Redes Sociais</h4>
+								<a href="https://www.twitter.com/doublefilter/" target="_blank"><img src="imagens/icones/twitter.png" class="icon_redes"></a>
+								<a href="https://www.instagram.com/doublefilter/" target="_blank"><img src="imagens/icones/instagram.png" class="icon_redes"></a>
+								<a href="https://www.facebook.com/doublefilter/" target="_blank"><img src="imagens/icones/facebook.png" class="icon_redes"></a>
+								</div>
+							</div>
+						</adress>
+					</div>
+				</div>
+				<hr style="border-color: grey; border-width: 1px 0 0 0;">
+				<p id="p-rights">© 2021 por DOUBLE FILTER. Todos os direitos reservados.</p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/Script_Minha_Conta.js"></script>
+	</body>
+</html>
