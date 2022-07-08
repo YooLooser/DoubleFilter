@@ -3,7 +3,7 @@ var cliente = JSON.parse(localStorage.getItem("perfil"));
 
 
 function showCarrinho() {
-	if (meuCarrinho == null) {
+	if ((meuCarrinho == null)||(meuCarrinho == "")) {
 		var sair;
 		criarMsgEmptyKart();
 		sair = confirm("Seu carrinho ainda está vazio, deseja conhecer nossa linha de produtos Double Filter?");
@@ -74,6 +74,7 @@ function criarCard(foto, nome, quantidade, valor, codigo) {
 	let preco = document.createElement("h6");
 
 	div1.setAttribute("class", "card");
+	div1.setAttribute("id", "produto" + codigo + "");
 	div2.setAttribute("class", "card-image");
 	div3.setAttribute("class", "card-body");
 	div4.setAttribute("class", "product-box-button");
@@ -103,6 +104,7 @@ function criarCard(foto, nome, quantidade, valor, codigo) {
 
 	botao.setAttribute("type", "button");
 	botao.setAttribute("class", "product-button");
+	botao.setAttribute("id", "cd" + codigo + "");
 	botao.setAttribute("onclick", "removerItem(this.id)");
 	let buttonText = document.createTextNode("Remover Item");
 	botao.appendChild(buttonText);
@@ -156,11 +158,13 @@ function valorTotal() {
 }
 
 function removerItem(id) {
-	var pos = parseInt(id.replace('qnt',''), 10);
-	console.log(meuCarrinho);
-	meuCarrinho.splice(pos-1, 1);
-	console.log(meuCarrinho);
-	alert(meuCarrinho);
+	var pos = parseInt(id.replace('cd',''), 10);
+	for (var i = 0; i < meuCarrinho.length; i++) {
+		if (meuCarrinho[i].codigo === pos) {
+			meuCarrinho.splice(i, 1);
+		}
+	}
+	alert("Item removido com sucesso!");
 	localStorage.setItem('carrinho', JSON.stringify(meuCarrinho));
 	location.reload();
 }

@@ -2,7 +2,7 @@ var cliente = JSON.parse(localStorage.getItem("perfil"));
 
 function verificarLogado() {
 	if (cliente.logado) {
-		var option=confirm("Você já está logado como " + cliente.nomeCompleto[0] + " " + cliente.nomeCompleto[1] + ". Deseja sair para iniciar uma nova sessão?");
+		var option = confirm("Você já está logado como " + cliente.nomeCompleto[0] + " " + cliente.nomeCompleto[1] + ". Deseja sair para iniciar uma nova sessão?");
 		
 		if (option == true) {
 			cliente.logado = false;
